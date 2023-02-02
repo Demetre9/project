@@ -1,0 +1,12 @@
+.partnet-title {
+  justify-content: center;
+  color: #fff;
+  font-size: 35px;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
