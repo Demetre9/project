@@ -1,5 +1,5 @@
 body {
-  background-color: wheat;
+  background-color: #06071b;
 }
 .nav {
   display: flex;
@@ -85,6 +85,7 @@ body {
 }
 
 .ai-text {
+  margin-top: 100px;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -92,12 +93,47 @@ body {
 }
 
 .letter {
-  margin-bottom: 10px;
   font-size: 25px;
   color: #fff;
   text-transform: uppercase;
 }
 
 .space {
-  height: 20px;
+  height: 25px;
+}
+
+.area {
+  padding: 200px;
+  margin-top: -250px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #06071b;
+  gap: 25px;
+}
+
+.description span {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.lorem {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.whoarewe {
+  color: #ff7000;
+  font-size: 30px;
+}
+
+.lorem-ipsum {
+  display: flex;
+  background-color: #06071b;
+  font-size: 15px;
+  color: #ffffffe5;
+  justify-content: space-between;
 }
