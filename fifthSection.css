@@ -1,0 +1,13 @@
+question-title {
+  color: #fff;
+  align-items: center;
+}
+
+.question-header {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.second-question-header {
+  font-size: 32px;
+}

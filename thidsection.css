@@ -1,12 +1,19 @@
-.partnet-title {
+.partner-title {
   justify-content: center;
   color: #fff;
   font-size: 35px;
+  margin-bottom: 35px;
 }
 
 .company {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px;
+}
+
+.descritpion-text {
+  color: #ffffff;
+  font-size: 15px;
+  background-color: darkorange;
+  padding-bottom: 30px;
 }

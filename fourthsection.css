@@ -1,10 +1,23 @@
-.event {
-  justify-content: space-evenly;
-  align-items: flex-start;
+.event-wrapper {
+  align-items: center;
 }
 
-.text-border {
-  display: flex;
-  color: #ffffff;
-  font-size: 20px;
+/* .event-div p,
+span {
+  color: #ffff;
+
+  font-size: 8px;
+} */
+.events-list {
+  align-items: baseline;
+}
+
+.events-list span,
+p {
+  color: #fff;
+  /* background-color: darkorange; */
+}
+
+.events-list img {
+  align-items: baseline;
 }
