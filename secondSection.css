@@ -55,4 +55,10 @@
 }
 .box {
   border: rgba(255, 255, 255, 0.9) 1px solid;
+
+  transition: transform 1s;
+}
+
+.box:hover {
+  transform: rotate(360deg);
 }
