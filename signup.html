@@ -1,99 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0); /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-      }
-
-      /* Modal Content */
-      .modal-content {
-        background-color: #fefefe;
-        margin: 15% auto; /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-          0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      }
-
-      /* The Close Button */
-      .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-      .modal-header {
-        padding: 2px 16px;
-        background-color: #5cb85c;
-        color: white;
-      }
-
-      .modal-body {
-        padding: 2px 16px;
-      }
-
-      form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-      }
-
-      input[type="text"],
-      input[type="password"] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-      }
-
-      input[type="submit"] {
-        width: 100%;
-        background-color: #4caf50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      .signup-link {
-        color: blue;
-        text-decoration: underline;
-        font-weight: bold;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" />
   </head>
   <body>
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Sign Up</button>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Sign Up</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form id="signup-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <span id="username-error" class="error"></span>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <span id="password-error" class="error"></span>
+
+            <input type="submit" value="Sign Up" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="signup.js "></script>
   </body>
 </html>
