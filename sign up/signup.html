@@ -10,7 +10,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h2>Sign Up</h2>
-          <span class="close">&times;</span>
+          <a href="/project/index.html" class="close">&times;</a>
         </div>
         <div class="modal-body">
           <form id="signup-form">
@@ -18,9 +18,22 @@
             <input type="text" id="username" name="username" required />
             <span id="username-error" class="error"></span>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <span id="email-error" class="error"></span>
+
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required />
             <span id="password-error" class="error"></span>
+
+            <label for="repeat-password">Repeat Password:</label>
+            <input
+              type="password"
+              id="repeat-password"
+              name="repeat-password"
+              required
+            />
+            <span id="repeat-password-error" class="error"></span>
 
             <input type="submit" value="Sign Up" />
           </form>

@@ -25,11 +25,11 @@
         <img src="/project/Images/Logo.png" alt="logo" />
       </div>
       <ul class="nav-list">
-        <li class="nav-item"><a href="#home">Home</a></li>
-        <li class="nav-item"><a href="#updates">Updates</a></li>
-        <li class="nav-item"><a href="#services">Services</a></li>
-        <li class="nav-item"><a href="#features">Features</a></li>
-        <li class="nav-item"><a href="#about">About us</a></li>
+        <a href="#home"> <li class="nav-item">Home</li></a>
+        <a href="#updates"> <li class="nav-item">Updates</li></a>
+        <a href="#services"><li class="nav-item">Services</li></a>
+        <a href="#features"><li class="nav-item">Features</li></a>
+        <a href="#about"> <li class="nav-item">About us</li></a>
       </ul>
       <ul class="nav-list">
         <li>
@@ -51,14 +51,17 @@
           <input type="submit" value="Submit" />
         </form>
         <p>
-          Not a member? <a href="signup.html" class="signup-link">Sign up</a>
+          Not a member?
+          <a href="/project/sign up/signup.html" class="signup-link flex-centre"
+            >Sign up</a
+          >
         </p>
       </div>
     </div>
     <!-- Navigation  -->
 
     <section>
-      <div class="hero">
+      <div class="hero" id="Home">
         <div class="robotic flex">
           <div class="machine flex">
             <h1 class="Ai">Ai & Robotics</h1>
@@ -121,7 +124,7 @@
       </div>
     </section>
 
-    <section class="area box">
+    <section class="area box" id="updates">
       <div class="description">
         <p class="whoarewe">Who are we</p>
         <span>We Help To Get Solutions</span>
@@ -156,7 +159,7 @@
       </div>
     </section>
 
-    <section class="robot-technology-section area">
+    <section class="robot-technology-section area" id="services">
       <div class="robot-technology-image-container">
         <img
           src="/project/images/life-5130779_1920.png"
@@ -204,7 +207,7 @@
       </div>
     </section>
 
-    <section class="events-area area">
+    <section class="events-area area" id="features">
       <div class="events-container flex-column">
         <h3 class="events-title flex partner-title">Upcoming Events</h3>
         <ul class="events-list flex-row area">
@@ -334,7 +337,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer id="about">
       <div class="container area">
         <div class="footer-lists flex-centre">
           <div class="product-list">
