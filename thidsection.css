@@ -19,12 +19,24 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.partner-title:hover {
-  transform: rotate(360deg);
-}
-
 .company {
   justify-content: space-between;
   align-items: center;
   padding: 25px;
+}
+.company img {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: imageAnim 3s ease-in-out infinite;
+}
+
+@keyframes imageAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
