@@ -1,23 +1,21 @@
 // Get the modal and the login button
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("loginBtn");
+const username = document.getElementById("username");
+const usernameInput = document.getElementById("usernameInput");
+const closeBtn = document.getElementById("closeBtn");
 
-// Get the close button in the modal
-var closeBtn = document.getElementsByClassName("close")[0];
+// Show the modal when the user clicks on the "Login" button
+username.addEventListener("click", () => {
+  document.getElementById("myModal").style.display = "block";
+});
 
-// When the login button is clicked, open the modal
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+// Close the modal when the user clicks on the "x" button
+closeBtn.addEventListener("click", () => {
+  document.getElementById("myModal").style.display = "none";
+});
 
-// When the close button is clicked, close the modal
-closeBtn.onclick = function () {
-  modal.style.display = "none";
-};
-
-// When anywhere outside the modal is clicked, close the modal
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+// When the form is submitted, update the text on the page to show the username
+document.forms[0].addEventListener("submit", (event) => {
+  event.preventDefault();
+  username.innerHTML = "Welcome " + usernameInput.value;
+  document.getElementById("myModal").style.display = "none";
+});
