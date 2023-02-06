@@ -1,4 +1,3 @@
-// Get input fields
 const username = document.getElementById("username");
 const password = document.getElementById("password");
 const submitBtn = document.getElementById("submitBtn");
@@ -35,9 +34,9 @@ password.addEventListener("input", function () {
   }
 });
 
-// Submit form only if inputs are valid
 submitBtn.addEventListener("click", function () {
   if (username.checkValidity() && password.checkValidity()) {
     alert("Form Submitted Successfully!");
+    window.location.replace("index.html");
   }
 });

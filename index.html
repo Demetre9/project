@@ -16,10 +16,11 @@
     <link rel="stylesheet" href="f.a.q.css" />
     <link rel="stylesheet" href="footer.css" />
 
-    <title>Document</title>
+    <title>A.I:Future is here</title>
   </head>
   <body>
     <!-- Navigation  -->
+
     <section class="nav">
       <div class="logo">
         <img src="/project/Images/Logo.png" alt="logo" />
@@ -37,28 +38,29 @@
         </li>
         <li class="nav-item username login" id="username">Login</li>
       </ul>
-    </section>
-  
-    <div class="modal" id="myModal">
-      <div class="modal-content">
-        <span class="close" id="closeBtn">&times;</span>
-        <h3 >Login</h3>
-        <form>
-          <label for="username">Username:</label>
-          <input type="text" id="usernameInput" name="username" required />
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-          <input type="submit" value="Submit" />
-        </form>
-        <p>
-          Not a member?
-          <a href="/project/sign up/signup.html" class="signup-link flex-centre"
-            >Sign up</a
-          >
-        </p>
+
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close" id="closeBtn">&times;</span>
+          <form>
+            <label for="username">Username:</label>
+            <input type="text" id="usernameInput" name="username" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <input type="submit" value="Submit" />
+          </form>
+          <p>
+            Not a member?
+            <a
+              href="/project/sign up/signup.html"
+              class="signup-link flex-centre"
+              >Sign up</a
+            >
+          </p>
+        </div>
       </div>
-    </div>
     </section>
+
     <!-- Navigation  -->
 
     <section>
@@ -370,9 +372,21 @@
           </div>
           <div class="subscribe">
             <div>
-              <input type="email" placeholder="Enter your email" />
-              <button type="submit">Subscribe</button>
-              <h3>Subscribe to our newsletter</h3>
+              <input type="email" placeholder="Enter your email " />
+              <div><button type="submit">Subscribe</button></div>
+              <p class="subscribe-text">
+                Gravida sed justo, justo, id est et. Amet tristique convallis
+                sed porttitor nullam eu ut.
+              </p>
+
+              <p class="subscribe-text">
+                Duis et odio aliquam bibendum. Metus et lectus id viverra
+                fringilla magna morbi.
+              </p>
+
+              <p class="subscribe-text">
+                Metus et lectus id viverra fringilla magna morbi
+              </p>
             </div>
           </div>
         </div>
@@ -401,4 +415,5 @@
   </body>
   <script src="modal.js"></script>
   <script src="f.a.q.js"></script>
+  <script src="/project/sign up/signup.js"></script>
 </html>
