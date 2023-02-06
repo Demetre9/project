@@ -2,9 +2,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 22px 120px 22px 120px;
+  padding: 22px;
   background-color: #06071b;
   font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    padding: 22px 120px 22px 120px;
+  }
 }
 
 .nav-list {
@@ -21,4 +27,11 @@
   background-color: darkorange;
   padding: 10px 20px;
   border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .login,
+  .signup {
+    padding: 10px;
+  }
 }
