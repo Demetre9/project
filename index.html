@@ -36,27 +36,56 @@
         <li>
           <img src="/project/Images/Language.png" alt="Language" />
         </li>
-        <li class="nav-item username login" id="username">Login</li>
+        <li class="nav-item username login" id="username-login">Login</li>
+        <li class="nav-item username signup" id="username-signup">Sign up</li>
       </ul>
 
-      <div class="modal" id="myModal">
+      <div class="modal" id="loginModal">
         <div class="modal-content">
-          <span class="close" id="closeBtn">&times;</span>
-          <form>
-            <label for="username">Username:</label>
-            <input type="text" id="usernameInput" name="username" required />
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required />
-            <input type="submit" value="Submit" />
-          </form>
-          <p>
-            Not a member?
-            <a
-              href="/project/sign up/signup.html"
-              class="signup-link flex-centre"
-              >Sign up</a
-            >
-          </p>
+          <div class="modal-header">
+            <a href="#" class="close" id="closeLoginBtn">&times;</a>
+          </div>
+          <div class="modal-body">
+            <form id="login-form">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required />
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="signupModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a href="#" class="close" id="closeSignupBtn">&times;</a>
+          </div>
+          <div class="modal-body">
+            <form id="signup-form">
+              <label for="signupUsername">Username:</label>
+              <input
+                type="text"
+                id="signupUsername"
+                name="signupUsername"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="signupPassword">Password:</label>
+              <input
+                type="password"
+                id="signupPassword"
+                name="signupPassword"
+                required
+              />
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -415,5 +444,4 @@
   </body>
   <script src="modal.js"></script>
   <script src="f.a.q.js"></script>
-  <script src="/project/sign up/signup.js"></script>
 </html>

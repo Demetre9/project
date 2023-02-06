@@ -16,7 +16,8 @@
   padding: 10px 20px;
 }
 
-.login {
+.login,
+.signup {
   background-color: darkorange;
   padding: 10px 20px;
   border-radius: 20px;
