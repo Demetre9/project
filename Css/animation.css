@@ -1,0 +1,26 @@
+.box {
+  border: rgba(255, 255, 255, 0.9) 1px solid;
+
+  transition: transform 1s;
+}
+
+.box:hover {
+  transform: rotate(360deg);
+}
+
+.company img {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: imageAnim 3s ease-in-out infinite;
+}
+
+@keyframes imageAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
