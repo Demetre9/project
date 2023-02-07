@@ -71,4 +71,42 @@
 }
 
 @media (max-width: 828px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login,
+  .signup {
+    padding: 0px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 462px) {
+  .login,
+  .signup {
+    padding: 0px;
+    font-size: 12px;
+    color: darkorange;
+    background-color: #06071b;
+  }
+  .nav {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 286px) {
+  .login,
+  .signup {
+    padding: 0px;
+    font-size: 12px;
+    color: darkorange;
+    background-color: #06071b;
+  }
+  .nav {
+    font-size: 6px;
+    display: flex;
+    flex-direction: column;
+  }
 }
