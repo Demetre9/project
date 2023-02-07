@@ -76,48 +76,10 @@
   border: solid 10px #06071b;
 }
 
-media only screen and (max-width: 767px) {
-  .nav {
-    font-size: 20px;
-    padding: 20px;
-  }
 
-  .machine {
-    margin-left: 0;
-  }
-
-  .stars {
-    margin-right: 0;
-  }
-
-  .future {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .text-container h2 {
-    font-size: 48px;
-  }
-
-  .ai-text {
-    margin-top: 75px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .text-container h2 {
-    font-size: 36px;
-  }
-
-  .demo {
+@media (max-width: 1190px) {
+  .login,
+  .signup {
+    padding: 0 20px 0px 5px;
     font-size: 20px;
   }
-
-  .letter {
-    font-size: 20px;
-  }
-
-  .space {
-    height: 20px;
-  }
-}

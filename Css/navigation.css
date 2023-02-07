@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: 828px) {
+@media (max-width: 900px) {
   .nav {
     display: flex;
     flex-direction: column;
@@ -81,9 +81,16 @@
     padding: 0px;
     font-size: 12px;
   }
+
+  .nav-list {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
-@media (max-width: 462px) {
+@media (max-width: 400px) {
   .login,
   .signup {
     padding: 0px;
@@ -93,6 +100,13 @@
   }
   .nav {
     font-size: 8px;
+  }
+
+  .nav-list {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -105,8 +119,14 @@
     background-color: #06071b;
   }
   .nav {
-    font-size: 6px;
+    font-size: 5px;
     display: flex;
     flex-direction: column;
+  }
+  .nav-list {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
