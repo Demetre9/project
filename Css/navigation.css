@@ -78,8 +78,9 @@
 
   .login,
   .signup {
-    padding: 0px;
     font-size: 12px;
+    color: darkorange;
+    background-color: #06071b;
   }
 
   .nav-list {
