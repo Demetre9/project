@@ -81,7 +81,7 @@
     margin-right: 0px;
   }
   .hero img {
-    width: 80%;
+    width: 50%;
   }
   .hero h2 {
     font-size: 30px;
@@ -89,55 +89,74 @@
   .ai-text {
     font-size: 18px;
   }
+  .demo {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 1258px) {
-  .stars {
-    margin-right: -50px;
+@media (max-width: 1400px) {
+  .hero {
+    height: auto;
   }
   .hero img {
-    width: 40%;
+    width: 30%;
   }
   .hero h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .ai-text {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+  }
+  .demo {
     font-size: 14px;
+    padding: 8px 8px;
+  }
+  .letter {
+    font-size: 10px;
+  }
+
+  .future {
+    margin-top: 50px;
   }
 }
 
-@media (max-width: 1134px) {
-  .stars {
-    margin-right: -50px;
-  }
+@media (max-width: 668px) {
   .hero img {
-    width: 30%;
+    width: 35%;
   }
   .hero h2 {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 25px;
   }
   .ai-text {
-    font-size: 12px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
   }
   .demo {
-    font-size: 20px;
+    font-size: 14px;
+    padding: 6px 6px;
+    margin-top: -60px;
+  }
+  .letter {
+    font-size: 10px;
+  }
+
+  .future {
+    margin-top: 50px;
+  }
+
+  .text-container {
+    font-size: 12px;
   }
 }
 
-@media (max-width: 734px) {
+@media (max-width: 617px) {
   .stars {
-    margin-right: -50px;
-  }
-  .hero img {
-    width: 30%;
-  }
-  .hero h2 {
-    font-size: 20px;
-  }
-  .ai-text {
-    font-size: 12px;
-  }
-  .demo {
-    font-size: 20px;
+    display: none;
   }
 }
