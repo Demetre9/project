@@ -6,7 +6,7 @@ const password = document.getElementById("password");
 const submitBtn = document.getElementById("submitBtn");
 const signupPassword = document.getElementById("signupPassword");
 const signUpusername = document.getElementById("signUpusername");
-
+const signupConfirmPassword = document.getElementById("signupConfirmPassword");
 // Show the login modal when the user clicks on the "Login" button
 loginBtn.addEventListener("click", () => {
   document.getElementById("loginModal").style.display = "block";
@@ -65,18 +65,24 @@ usernameInput.addEventListener("input", function () {
 // Validate password
 
 signupPassword.addEventListener("input", function () {
-  if (signupPassword.value.length >= 6) {
+  if (signupPassword.value.length >= 8) {
     let upperCaseLetters = /[A-Z]/g;
     if (signupPassword.value.match(upperCaseLetters)) {
       let uppercaseCount = signupPassword.value.match(upperCaseLetters).length;
       if (uppercaseCount >= 2) {
         signupPassword.setCustomValidity("");
-        document.forms[1].addEventListener("submit", (event) => {
-          event.preventDefault();
-          loginBtn.innerHTML = "Welcome " + signUpusername.value;
-          document.getElementById("signupModal").style.display = "none";
-          closeSignupBtn.click();
-        });
+        // Check if the password and confirm password match
+        if (signupPassword.value === signupConfirmPassword.value) {
+          signupConfirmPassword.setCustomValidity("");
+        } else {
+          signupConfirmPassword.setCustomValidity(
+            "Password and confirm password must match"
+          );
+        }
+      } else {
+        signupPassword.setCustomValidity(
+          "Password must contain at least 2 uppercase characters"
+        );
       }
     } else {
       signupPassword.setCustomValidity(
@@ -85,14 +91,36 @@ signupPassword.addEventListener("input", function () {
     }
   } else {
     signupPassword.setCustomValidity(
-      "Password must be at least 6 characters long"
+      "Password must be at least 8 characters long"
     );
+  }
+});
+
+signupConfirmPassword.addEventListener("input", function () {
+  // Check if the password and confirm password match
+  if (signupPassword.value === signupConfirmPassword.value) {
+    signupConfirmPassword.setCustomValidity("");
+  } else {
+    signupConfirmPassword.setCustomValidity(
+      "Password and confirm password must match"
+    );
+  }
+});
+
+document.forms[1].addEventListener("submit", (event) => {
+  event.preventDefault();
+  // Check if both password and confirm password are valid
+  if (signupPassword.validity.valid && signupConfirmPassword.validity.valid) {
+    loginBtn.innerHTML = "Welcome " + signUpusername.VA;
+    document.getElementById("signupModal").style.display = "none";
+
+    closeSignupBtn.click();
   }
 });
 
 document.getElementById("signup-form").addEventListener("submit", (event) => {
   event.preventDefault();
-  loginBtn.innerHTML = "Welcome " + usernameInput.value;
+  loginBtn.innerHTML = "Welcome " + signUpusername.value;
   document.getElementById("username-signup").style.display = "none";
 
   document.getElementById("username-signup").style.display = "none";
