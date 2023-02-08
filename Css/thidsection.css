@@ -19,8 +19,27 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.company {
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px;
+@media only screen and(max-width: 1330px) {
+  .partner-title {
+    font-size: 30px;
+  }
+  .area {
+    padding: 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .partner-title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .partner-title {
+    font-size: 22px;
+  }
+  .company {
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
 }

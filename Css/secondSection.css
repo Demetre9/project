@@ -30,14 +30,14 @@
   margin-bottom: 50px;
 }
 
-@media (max-width: 970px) {
+@media only screen and (max-width: 970px) {
   .lorem-ipsum {
     display: flex;
     justify-content: center;
   }
 }
 
-@media (max-width: 670px) {
+@media only screen and (max-width: 670px) {
   .box {
     color: navy;
   }
@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .box {
     border: none;
   }
@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   .box {
     background-color: #06071b;
   }
@@ -86,19 +86,19 @@
   }
 }
 
-@media (max-width: 372px) {
+@media only screen and(max-width: 372px) {
   .robo-kid {
     margin-left: -120px;
   }
 }
 
-@media (max-width: 342px) {
+@media only screen and (max-width: 342px) {
   .robo-kid {
     margin-left: -165px;
   }
 }
 
-@media (max-width: 250px) {
+@media only screen and (max-width: 250px) {
   .robo-kid {
     margin-left: -175px;
   }

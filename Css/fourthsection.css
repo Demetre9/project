@@ -21,3 +21,25 @@ p {
 .events-list img {
   align-items: baseline;
 }
+
+@media only screen and (max-width: 1600px) {
+  .area {
+    padding: 75px 80px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .area {
+    padding: 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .events-list {
+    flex-direction: column;
+  }
+
+  events-area {
+    display: flex;
+    align-items: center;
+  }
+}
