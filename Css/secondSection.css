@@ -61,11 +61,69 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 670px) {
+  .box {
+    color: navy;
+  }
   .area {
     padding: 50px 200px;
   }
   .description {
     margin-bottom: 25px;
+  }
+  .lorem-ipsum {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .box {
+    border: none;
+  }
+
+  .area {
+    padding: 50px 150px;
+  }
+  .lorem-ipsum {
+    flex-direction: column;
+  }
+  .robo-kid {
+    margin-left: -70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .box {
+    background-color: #06071b;
+  }
+
+  .box img {
+  }
+  .area {
+    padding: 50px 150px;
+  }
+  .lorem-ipsum {
+    flex-direction: column;
+  }
+  .robo-kid {
+    margin-left: -90px;
+  }
+}
+
+@media (max-width: 372px) {
+  .robo-kid {
+    margin-left: -120px;
+  }
+}
+
+@media (max-width: 342px) {
+  .robo-kid {
+    margin-left: -130px;
+  }
+}
+
+@media (max-width: 25px) {
+  .robo-kid {
+    margin-left: -175px;
   }
 }
