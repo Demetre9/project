@@ -30,30 +30,6 @@
   margin-bottom: 50px;
 }
 
-.robot-technology-section {
-  display: flex;
-  gap: 25px;
-  color: #fff;
-}
-
-.robot-technology-image-container {
-  margin-bottom: 25px;
-}
-
-.title {
-  color: #ff7000;
-}
-
-.robot-technology-heading {
-  font-size: 40px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.robot-technology-description {
-  font-size: 30px;
-}
-
 @media (max-width: 970px) {
   .lorem-ipsum {
     display: flex;
@@ -118,11 +94,11 @@
 
 @media (max-width: 342px) {
   .robo-kid {
-    margin-left: -130px;
+    margin-left: -165px;
   }
 }
 
-@media (max-width: 25px) {
+@media (max-width: 250px) {
   .robo-kid {
     margin-left: -175px;
   }

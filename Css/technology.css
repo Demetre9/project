@@ -1,0 +1,112 @@
+.robot-technology-section {
+  display: flex;
+  gap: 25px;
+  color: #fff;
+}
+
+.robot-technology-image-container {
+  margin-bottom: 25px;
+}
+
+.title {
+  color: #ff7000;
+}
+
+.robot-technology-heading {
+  font-size: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.robot-technology-description {
+  font-size: 30px;
+}
+
+@media (max-width: 1790px) {
+  .robot-technology-description {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 1626px) {
+  .robot-technology-description {
+    font-size: 18p;
+  }
+
+  .area {
+    padding: 50px 150px;
+  }
+}
+
+@media (max-width: 1222px) {
+  .robot-technology-description {
+    font-size: 15px;
+  }
+  .area {
+    padding: 50px 180px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .robot-technology-description {
+    font-size: 14px;
+  }
+  .area {
+    padding: 50px 110px;
+  }
+}
+
+@media (max-width: 900px) {
+  .robot-technology-section {
+    flex-direction: column;
+  }
+  .robot-technology-description {
+    font-size: 12px;
+    margin-bottom: 35px;
+  }
+  .area {
+    padding: 50px 110px;
+  }
+  .robot-technology-description {
+    font-size: 14px;
+  }
+
+  .robot-technology-image-container {
+    width: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .robot-technology-section {
+    flex-direction: column;
+    padding: 10px 0px;
+    margin-left: 10px;
+  }
+
+  .robot-technology-description {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  .robot-technology-description {
+    font-size: 16px;
+  }
+  .robo-sun {
+    width: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .robo-sun {
+    width: 300px;
+  }
+}
+
+@media (max-width: 250px) {
+  .robo-sun {
+    width: 230px;
+  }
+  .robot-technology-section {
+    margin-left: 30px;
+  }
+}
