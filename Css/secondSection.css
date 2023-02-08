@@ -53,3 +53,19 @@
 .robot-technology-description {
   font-size: 30px;
 }
+
+@media (max-width: 970px) {
+  .lorem-ipsum {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .area {
+    padding: 50px 200px;
+  }
+  .description {
+    margin-bottom: 25px;
+  }
+}
