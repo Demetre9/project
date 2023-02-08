@@ -48,3 +48,12 @@
 .faq-item.open .faq-arrow {
   transform: rotate(270deg);
 }
+
+@media only screen and (max-width: 1300px) {
+  .faq-header {
+    font-size: 30px;
+  }
+  .faq-intro {
+    font-size: 25px;
+  }
+}
