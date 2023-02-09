@@ -176,6 +176,7 @@ footer {
 @media only screen and (max-width: 400px) {
   .footer-lists {
     justify-content: space-around;
+    margin-left: 30px;
   }
 
   .footer-bottom {
