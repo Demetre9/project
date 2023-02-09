@@ -73,8 +73,6 @@
     background-color: #06071b;
   }
 
-  .box img {
-  }
   .area {
     padding: 50px 150px;
   }
@@ -94,12 +92,12 @@
 
 @media only screen and (max-width: 342px) {
   .robo-kid {
-    margin-left: -165px;
+    margin-left: -50px;
   }
 }
 
 @media only screen and (max-width: 250px) {
   .robo-kid {
-    margin-left: -175px;
+    margin-left: -50px;
   }
 }

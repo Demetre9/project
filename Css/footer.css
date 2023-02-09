@@ -165,4 +165,26 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+  .footer-lists {
+    gap: 15px;
+  }
+
+  .footer-bottom {
+    margin-right: -70px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footer-lists {
+    justify-content: space-around;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .social-links {
+    margin-bottom: 25px;
+  }
+  .area {
+    padding: 25px 20px;
+  }
 }
