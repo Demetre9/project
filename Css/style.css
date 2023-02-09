@@ -1,34 +1,28 @@
 body {
+  font-family: "Inter", sans-serif;
   background-color: #06071b;
 }
-
 .position {
   position: absolute;
 }
-
 .flex {
   display: flex;
 }
-
 .flex-row {
   display: flex;
   flex-direction: row;
 }
-
 .flex-collum {
   display: flex;
   flex-direction: column;
 }
-
 .flex-centre {
   display: flex;
   justify-content: center;
 }
-
 .area {
   padding: 50px 300px;
 }
-
 .relative {
   position: relative;
 }
